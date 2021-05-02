@@ -16,4 +16,10 @@ body {
   place-items: center;
   line-height: 1.6;
   background: var(--clr-neutral-900);
+  font-family: sans-serif;
+}
+
+.card {
+  color: var(--clr-neutral-100);
+  background-image: url(img/card-bg.jpeg); /* You don't have to have "" when your image name doesn't have space in it */
 }
