@@ -47,8 +47,10 @@ body {
     hsl(0 0% 0% / 0),
     /* You can see by having hsl(255 50% 50% / 1) 20%, you will see the top is slowly fade into purple color at the top 20% mark
        And then from 20% - 100%, linearly fade into black color
+      hsl(255 50% 50% / 1) 10%,
+      hsl(255 50% 50% / 1) 20%,
     */
-      /*hsl(255 50% 50% / 1) 10%,*/ hsl(255 50% 50% / 1) 20%,
+      hsl(20 0% 0% / 0.3) 20%,
     hsl(0 0% 0% / 1)
   );
 }
