@@ -1,0 +1,3 @@
+CSS Card with hover animation and mobile fallback (https://www.youtube.com/watch?v=5DEq5cWNYt8)
+
+https://codepen.io/kevinpowell/pen/BapvMve
