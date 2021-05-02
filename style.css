@@ -28,3 +28,18 @@ body {
   /* the 'ch' unit is relative to the width of the 0 character */
   max-width: 35ch; /* this is where it make the card smaller */
 }
+
+.card-content {
+  padding: 1.5em;
+  /*
+    hsl(0 0% 0% / 1)    -> Pure black
+    hsl(0 0% 100% / 1)  -> Pure white
+
+    hsl(0 0% 0% / 1)    -> Pure black
+    hsl(0 0% 0% / 0.5)    -> Opacity 50% on Pure black
+
+    You can do this with rgba as well.
+    Every browser except for IE supports the space separated syntax
+   */
+  background: hsl(0 0% 0% / 0.5);
+}
