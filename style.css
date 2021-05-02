@@ -73,6 +73,7 @@ body {
   left: calc(var(--padding) * -1);
 
   bottom: 0;
-  width: 100%;
+  /* this will make the underline always in full width of the text and regardless any change on padding size */
+  width: calc(100% + var(--padding));
   background: var(--clr-accent-400);
 }
