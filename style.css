@@ -54,3 +54,19 @@ body {
     hsl(0 0% 0% / 1)
   );
 }
+
+.card-title {
+  position: relative;
+  width: max-content;
+  outline: 1px solid red;
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: var(--clr-accent-400);
+}
