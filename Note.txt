@@ -1,3 +1,11 @@
 CSS Card with hover animation and mobile fallback (https://www.youtube.com/watch?v=5DEq5cWNYt8)
-
 https://codepen.io/kevinpowell/pen/BapvMve
+
+https://github.com/Annie-Huang/css-card-hover-animation-mobile-fallback
+============================================================================
+
+Goal:
+Animation with CSS only
+Mobile device support
+Keyboard navigation
+Disabled animations
