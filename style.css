@@ -30,7 +30,10 @@ body {
 }
 
 .card-content {
-  padding: 1.5em;
+  /* Have to use rem because card-content and card-title are different font-size */
+  --padding: 1.5rem;
+  padding: var(--padding);
+
   /*
     hsl(0 0% 0% / 1)    -> Pure black
     hsl(0 0% 100% / 1)  -> Pure white
@@ -65,7 +68,10 @@ body {
   content: "";
   position: absolute;
   height: 4px;
-  left: 0;
+
+  /*left: -(var(--padding));  Cannot do this way*/
+  left: calc(var(--padding) * -1);
+
   bottom: 0;
   width: 100%;
   background: var(--clr-accent-400);
