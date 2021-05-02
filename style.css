@@ -22,4 +22,9 @@ body {
 .card {
   color: var(--clr-neutral-100);
   background-image: url(img/card-bg.jpeg); /* You don't have to have "" when your image name doesn't have space in it */
+  background-size: cover;
+  padding: 10rem 0 0;
+
+  /* the 'ch' unit is relative to the width of the 0 character */
+  max-width: 35ch; /* this is where it make the card smaller */
 }
