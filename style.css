@@ -73,6 +73,42 @@ body {
   transition: transform 500ms ease;
   */
 }
+
+.card-title {
+  position: relative;
+  width: max-content;
+  /*outline: 1px solid red;*/
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+
+  /*left: -(var(--padding));  Cannot do this way*/
+  left: calc(var(--padding) * -1);
+
+  bottom: -2px;
+  /* this will make the underline always in full width of the text and regardless any change on padding size */
+  width: calc(100% + var(--padding));
+  background: var(--clr-accent-400);
+
+  /* Shift this to @media (hover)
+  transform: scaleX(0);
+  */
+  transition: transform 500ms ease;
+  transform-origin: left; /* default is the center */
+}
+
+.card:hover .card-title::after,
+.card:focus-within .card-title::after {
+  transform: scaleX(1);
+}
+
+.card-body {
+  color: rgb(255 255 255/0.85);
+}
+
 /* if the primary pointing device can do hover, do this: */
 @media (hover) {
   .card-content {
@@ -111,41 +147,6 @@ body {
   .card-title::after {
     transform: scaleX(0);
   }
-}
-
-.card-title {
-  position: relative;
-  width: max-content;
-  /*outline: 1px solid red;*/
-}
-
-.card-title::after {
-  content: "";
-  position: absolute;
-  height: 4px;
-
-  /*left: -(var(--padding));  Cannot do this way*/
-  left: calc(var(--padding) * -1);
-
-  bottom: -2px;
-  /* this will make the underline always in full width of the text and regardless any change on padding size */
-  width: calc(100% + var(--padding));
-  background: var(--clr-accent-400);
-
-  /* Shift this to @media (hover)
-  transform: scaleX(0);
-  */
-  transition: transform 500ms ease;
-  transform-origin: left; /* default is the center */
-}
-
-.card:hover .card-title::after,
-.card:focus-within .card-title::after {
-  transform: scaleX(1);
-}
-
-.card-body {
-  color: rgb(255 255 255/0.85);
 }
 
 .button {
