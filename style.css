@@ -109,7 +109,11 @@ body {
   color: rgb(255 255 255/0.85);
 }
 
-/* if the primary pointing device can do hover, do this: */
+/* If the primary pointing device can do hover, do this:
+
+   Err.... I personally will shift all the transform and transition property into the @media (hover) block rather than leave
+   some of them outside. That would be more clean..
+*/
 @media (hover) {
   .card-content {
     /* This means if the device that does not have hover, never move the .card-content down */
