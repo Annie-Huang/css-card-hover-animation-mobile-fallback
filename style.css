@@ -170,13 +170,18 @@ body {
 
 /*
   From Andy Bell's A Modern CSS reset. https://hankchizljaw.com/wrote/a-modern-css-reset/
+
+  The following setting is for it o still have the hover effect. But just forward everything to the end state when on hover.
  */
 /*@media (prefers-reduced-motion: no-preference) {*/
 @media (prefers-reduced-motion: reduce) {
-  * {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+    transition-delay: 0ms !important;
   }
 }
