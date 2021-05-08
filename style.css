@@ -28,7 +28,7 @@ body {
   /* the 'ch' unit is relative to the width of the 0 character */
   max-width: 35ch; /* this is where it make the card smaller */
 
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   overflow: hidden; /* this is for the bottom bit of .card-content */
 }
 
@@ -64,7 +64,7 @@ body {
 .card-title {
   position: relative;
   width: max-content;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .card-title::after {
@@ -88,6 +88,7 @@ body {
   color: var(--clr-neutral-900);
   background-color: var(--clr-accent-400);
   padding: 0.5em 1.25em;
+  border-radius: 0.25em;
 }
 
 .button:hover,
