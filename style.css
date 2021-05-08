@@ -77,6 +77,16 @@ body {
   transition-delay: 500ms;
 }
 
+/*
+   This problem only happens in firefox but not chrome (chrome seems to handle it better)
+   But basically need to rewrite the transition duration in .card-content --> transition: transform 500ms ease;
+   to 0 value so it doesn't have duration for tabbing. Because browser by default will bring all the on focus element
+   into view of the page.
+ */
+.card:focus-within .card-content {
+  transition-duration: 0ms;
+}
+
 .card-content > *:not(.card-title) {
   opacity: 0;
   transition: opacity 500ms linear;
