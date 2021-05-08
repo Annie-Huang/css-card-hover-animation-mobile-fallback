@@ -4,7 +4,7 @@ https://codepen.io/kevinpowell/pen/BapvMve
 https://github.com/Annie-Huang/css-card-hover-animation-mobile-fallback
 
 From Andy Bell's A Modern CSS reset. https://hankchizljaw.com/wrote/a-modern-css-reset/
-
+https://medium.com/outsystems-experts/how-to-achieve-60-fps-animations-with-css3-db7b98610108
 ============================================================================
 
 Goal:
