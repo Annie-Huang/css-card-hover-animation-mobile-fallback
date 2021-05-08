@@ -27,6 +27,9 @@ body {
 
   /* the 'ch' unit is relative to the width of the 0 character */
   max-width: 35ch; /* this is where it make the card smaller */
+
+  border-radius: 1rem;
+  overflow: hidden; /* this is for the bottom bit of .card-content */
 }
 
 .card-content {
