@@ -85,6 +85,13 @@ body {
   /* this will make the underline always in full width of the text and regardless any change on padding size */
   width: calc(100% + var(--padding));
   background: var(--clr-accent-400);
+
+  transform: scaleX(0);
+  transition: transform 500ms ease;
+}
+
+.card:hover .card-title::after {
+  transform: scaleX(1);
 }
 
 .card-body {
