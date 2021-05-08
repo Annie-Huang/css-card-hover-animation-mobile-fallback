@@ -68,8 +68,18 @@ body {
     hsl(0 0% 0% / 1)
   );
 
+  /* Shift this to @media (hover)...
   transform: translateY(65%);
   transition: transform 500ms ease;
+  */
+}
+/* if the primary pointing device can do hover, do this: */
+@media (hover) {
+  .card-content {
+    /* This means if the device that does not have hover, never move the .card-content down */
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
 }
 .card:hover .card-content,
 .card:focus-within .card-content {
