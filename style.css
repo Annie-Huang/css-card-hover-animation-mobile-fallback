@@ -30,6 +30,12 @@ body {
 
   border-radius: 0.5rem;
   overflow: hidden; /* this is for the bottom bit of .card-content */
+
+  transition: transform 500ms ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card-content {
