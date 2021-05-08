@@ -88,6 +88,7 @@ body {
 
   transform: scaleX(0);
   transition: transform 500ms ease;
+  transform-origin: left; /* default is the center */
 }
 
 .card:hover .card-title::after {
