@@ -101,10 +101,15 @@ body {
     opacity: 0;
     transition: opacity 500ms linear;
   }
+
   .card:hover .card-content > *:not(.card-title),
   .card:focus-within .card-content > *:not(.card-title) {
     opacity: 1;
     transition-delay: 1000ms;
+  }
+
+  .card-title::after {
+    transform: scaleX(0);
   }
 }
 
@@ -127,7 +132,9 @@ body {
   width: calc(100% + var(--padding));
   background: var(--clr-accent-400);
 
+  /* Shift this to @media (hover)
   transform: scaleX(0);
+  */
   transition: transform 500ms ease;
   transform-origin: left; /* default is the center */
 }
