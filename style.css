@@ -34,7 +34,9 @@ body {
   transition: transform 500ms ease;
 }
 
-.card:hover {
+/* Need to use focus-within because the button that can be focus by tab is within the .card */
+.card:hover,
+.card:focus-within {
   transform: scale(1.05);
 }
 
@@ -69,7 +71,8 @@ body {
   transform: translateY(65%);
   transition: transform 500ms ease;
 }
-.card:hover .card-content {
+.card:hover .card-content,
+.card:focus-within .card-content {
   transform: translateY(0);
   transition-delay: 500ms;
 }
